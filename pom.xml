@@ -1,0 +1,78 @@
+xml version=1.0 encoding=UTF-8
+project xmlns=httpmaven.apache.orgPOM4.0.0 xmlnsxsi=httpwww.w3.org2001XMLSchema-instance
+	xsischemaLocation=httpmaven.apache.orgPOM4.0.0 httpmaven.apache.orgxsdmaven-4.0.0.xsd
+	modelVersion4.0.0modelVersion
+	groupIdcom.saucelabsgroupId
+	artifactIdsauce_appium_junitartifactId
+	version0.0.1-SNAPSHOTversion
+	namesauce_appium_junitname
+	descriptionSample Appium tests using JUnitdescription
+	dependencies
+		dependency
+			groupIdjunitgroupId
+			artifactIdjunitartifactId
+			version4.12version
+			scopetestscope
+		dependency
+        dependency
+            groupIdio.appiumgroupId
+            artifactIdjava-clientartifactId
+            version5.0.0-BETA8version
+		dependency
+		dependency
+			groupIdcom.googlecode.json-simplegroupId
+			artifactIdjson-simpleartifactId
+			version1.1version
+			scopetestscope
+		dependency
+		dependency
+			groupIdcommons-langgroupId
+			artifactIdcommons-langartifactId
+			version2.6version
+			scopetestscope
+		dependency
+		!-- Includes the Sauce JUnit helper libraries --
+		dependency
+			groupIdcom.saucelabsgroupId
+			artifactIdsauce_junitartifactId
+			version2.1.23version
+			scopetestscope
+		dependency
+		dependency
+			groupIdcom.google.code.gsongroupId
+			artifactIdgsonartifactId
+			version2.2.4version
+		dependency
+	dependencies
+
+	build
+		plugins
+			plugin
+				groupIdorg.apache.maven.pluginsgroupId
+				artifactIdmaven-surefire-pluginartifactId
+			plugin
+			plugin
+				artifactIdmaven-compiler-pluginartifactId
+				configuration
+					source1.8source
+					target1.8target
+				configuration
+			plugin
+		plugins
+	build
+
+	repositories
+		repository
+			idsaucelabs-repositoryid
+			urlhttpsrepository-saucelabs.forge.cloudbees.comreleaseurl
+			releases
+				enabledtrueenabled
+			releases
+			snapshots
+				enabledtrueenabled
+			snapshots
+		repository
+	repositories
+
+
+project
